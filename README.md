@@ -45,7 +45,7 @@ While the first two approaches displayed similar results, the second approach im
 ### The basic pipeline architecture
 <img width="325" alt="Screen Shot 2023-03-02 at 8 17 50 PM" src="https://user-images.githubusercontent.com/113449546/222607298-f125afb6-6918-4aac-aef2-4667b5d3351f.png">
 
-# Evaluation
+# Evaluation and Conclusion
 Ultimately, using Gensim and SpaCy for preprocessing and then a Logistic Regression ended up achieving the best results. 
 | Metric          | Value       |
 | ----------------|-------------|
@@ -60,9 +60,9 @@ Ultimately, using Gensim and SpaCy for preprocessing and then a Logistic Regress
 ### Top 20 Features by Specialty
 ![model_features](https://user-images.githubusercontent.com/113449546/222605170-85e8b898-180c-4346-9e12-03adb7af408b.png)
 
-
-# Conclusion
 While there is significant value in the idea behind the model, the results would need significant improvement to be practically implemented. The model had a clear issue in distinguishing Surgery from other categories, as surgery clearly could have overlap with many disciplines. It often predicted that a transcript was for a certain specialty, when it was actually a surgical visit. For instance, Orthopedics and Surgery was difficult for the model to differentiate, but this was not surprising as one usually does not see an Orthopedist unless they are getting some sort of surgery. Although, the model did do very well at determining when something was a general visit compared to other specialties. 
+
+The model was able to pick up on many of the important features that one would think would distinguish these specialties from one another. In some cases, there were multiple different topics from the NMF model coming up for a certain specialty which could be one of the issues in the models predictions. For instance, the Cardiovascular category only had one topic in its important features, although the Surgery category had 3 different topics. One issue with the NMF model was that the 4th topic (nmf__topic3) appeared in over half of the specialties. In the end, the topic weights still improved the classifications overall.
 
 # Next Steps
   > Acquire more data to not only include more specialties but to create a useful LSTM model
