@@ -38,6 +38,8 @@ The last two approaches were unsuccessful as there was not enough data for the L
 
 While the first two approaches displayed similar results, the second approach improved the accuracy, precision, recall and F1-scores by roughly 3-4%. The second approach involved both vectorizing the text as well as using the topic weights created from the NMF model as inputs into each model. 
 
+When trying to remove words too common throughout the documents, it actually led to a less effective classification model. The best results can be found in the gensim notebooks folder, in the `gensim_modeling.ipynb` notebook
+
 # Evaluation and Conclusion
 Ultimately, using Gensim and SpaCy for preprocessing, combined with NMF topic distributions and then a Logistic Regression ended up achieving the best results. 
 
