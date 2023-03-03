@@ -3,13 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-*.jpg
-*.png
-*.bin
-*.kv
-*.npy
-*.kv.vectors.npy
-
 # C extensions
 *.so
 
