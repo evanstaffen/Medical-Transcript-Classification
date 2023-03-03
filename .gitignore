@@ -6,7 +6,6 @@ __pycache__/
 *.jpg
 *.png
 *.bin
-*.html
 *.kv
 *.npy
 *.kv.vectors.npy
