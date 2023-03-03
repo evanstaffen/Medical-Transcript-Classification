@@ -11,7 +11,7 @@ In today's healthcare environment, doctors are required to spend more time than 
 
 
 # Dataset
-The dataset was downloaded from __[Kaggle](https://www.kaggle.com/datasets/tboyle10/medicaltranscriptions)__. Some categories in the dataset were combined to create a more effective model. For instance, Neurosurgery and Neurology were combined into one category, as well as Consult and General Medicine. The categories of Discharge Summary and SOAP/Chart/Progress Notes were dropped from the dataset as they were deemed too broad to classify. The other specialties that were dropped were those that had fewer than 100 transcripts, as it was not enough data to create an effective classification model for them. 33 rows of the dataset contained no transcript at all and those were removed.
+The dataset was downloaded from __[Kaggle](https://www.kaggle.com/datasets/tboyle10/medicaltranscriptions)__. Some categories in the dataset were combined to create a more effective model. For instance, Neurosurgery and Neurology were combined into one category, as well as Consult - History and Physical, and General Medicine. The categories of Discharge Summary and SOAP/Chart/Progress Notes were dropped from the dataset as they were deemed too broad to classify. The other specialties that were dropped were those that had fewer than 100 transcripts, as it was not enough data to create an effective classification model for them. 33 rows of the dataset contained no transcript at all and those were removed.
 
 This ultimately left the dataset with 3,714 transcripts and the following counts for each.
 | Specialty                                        | Number of Documents |
