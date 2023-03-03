@@ -38,9 +38,12 @@ The last two approaches were unsuccessful as there was not enough data for the L
 
 While the first two approaches displayed similar results, the second approach improved the accuracy, precision, recall and F1-scores by roughly 3-4%. The second approach involved both vectorizing the text as well as using the topic weights created from the NMF model as inputs into each model. 
 
-[insert image of topic model]
 
-[insert image of pipeline]
+### The NMF model topic visualization
+<img width="1195" alt="Screen Shot 2023-03-02 at 8 16 43 PM" src="https://user-images.githubusercontent.com/113449546/222607200-0e554a8f-3f63-48e1-903b-55193ca702fb.png">
+
+### The basic pipeline architecture
+<img width="325" alt="Screen Shot 2023-03-02 at 8 17 50 PM" src="https://user-images.githubusercontent.com/113449546/222607298-f125afb6-6918-4aac-aef2-4667b5d3351f.png">
 
 # Evaluation
 Ultimately, using Gensim and SpaCy for preprocessing and then a Logistic Regression ended up achieving the best results. 
@@ -51,8 +54,10 @@ Ultimately, using Gensim and SpaCy for preprocessing and then a Logistic Regress
 | Recall          |  56.80%     |
 | F1-Score        |  55.48%     |
 
-![confusion_matrix](https://user-images.githubusercontent.com/113449546/222605200-c4ef0095-05b3-4518-97aa-74cf6061a296.png)
+### Testing Confusion Matrix
+![confusion_matrix](https://user-images.githubusercontent.com/113449546/222606911-a9515095-3a72-40fa-977e-e18dd9213569.png)
 
+### Top 20 Features by Specialty
 ![model_features](https://user-images.githubusercontent.com/113449546/222605170-85e8b898-180c-4346-9e12-03adb7af408b.png)
 
 
@@ -63,3 +68,5 @@ While there is significant value in the idea behind the model, the results would
   > Acquire more data to not only include more specialties but to create a useful LSTM model
   
   > Find a dataset with better topic differentiation
+
+  > Look into pre-trained vectors that contain specific medical terminology
