@@ -41,10 +41,10 @@ While the first two approaches displayed similar results, the second approach im
 # Evaluation and Conclusion
 Ultimately, using Gensim and SpaCy for preprocessing, combined with NMF topic distributions and then a Logistic Regression ended up achieving the best results. 
 
-### The NMF model topic visualization
+### The NMF Topic Visualization
 <img width="1195" alt="Screen Shot 2023-03-02 at 8 16 43 PM" src="https://user-images.githubusercontent.com/113449546/222607200-0e554a8f-3f63-48e1-903b-55193ca702fb.png">
 
-### The pipeline architecture
+### Pipeline Architecture
 <img width="325" alt="Screen Shot 2023-03-02 at 8 17 50 PM" src="https://user-images.githubusercontent.com/113449546/222607298-f125afb6-6918-4aac-aef2-4667b5d3351f.png">
 
 | Metric          | Value       |
